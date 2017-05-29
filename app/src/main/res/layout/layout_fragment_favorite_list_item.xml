@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="bean"
+            type="com.dora.feed.mvp.bean.FaoriteBean.Data" />
+        <variable
+            name="click"
+            type="com.dora.feed.mvp.bean.FaoriteItmeHandler" />
+        <import type="android.view.View"/>
+    </data>
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        bind:mrl_rippleAlpha="0.1"
+        bind:mrl_rippleColor="@color/color_666666"
+        bind:mrl_rippleHover="true"
+        bind:mrl_rippleOverlay="true">
+<RelativeLayout
+    style="@style/RecyclerItemViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    >
+    <!--android:onClick="@{click.myOnclick}"-->
+        <RelativeLayout
+            android:id="@+id/favorite_item_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_click_rela"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+           >
+
+            <RelativeLayout
+                android:id="@+id/image_view_rl"
+                android:layout_width="100dp"
+                android:layout_height="80dp">
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    app:imgFavorite="@{bean.master_img}"
+                    android:background="@drawable/loading_icon_small"/>
+                <TextView
+                    android:layout_width="34dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/padding_5"
+                    android:layout_marginRight="@dimen/padding_5"
+                    android:background="@drawable/layout_video_time_small_bg"
+                    android:visibility="@{bean.private_url == null ? View.GONE : View.VISIBLE}"
+                    android:gravity="center_vertical|right"
+                    android:paddingRight="@dimen/padding_12"
+                    android:text="@{bean.durationInMMSS}"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginRight="@dimen/padding_10"
+                android:layout_toRightOf="@id/image_view_rl">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/size_15"
+                    android:textColor="@color/color_333333"
+                    android:lineSpacingExtra="2dp"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:text="@{bean.title}"/>
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:textSize="@dimen/size_14"-->
+                    <!--android:text="7/16-8/16"/>-->
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_alignParentBottom="true">-->
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="@dimen/size_9"-->
+                    <!--android:textColor="@color/color_aaaaaa"-->
+                    <!--android:text="@{bean.look_num}"/>-->
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="@dimen/size_9"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:textColor="@color/color_aaaaaa"-->
+                    <!--android:text="  阅读"/>-->
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/image_view_rl">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentBottom="true">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_9"
+                        android:textColor="@color/color_aaaaaa"
+                        android:text="@{bean.look_num}"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_9"
+                        android:visibility="gone"
+                        android:textColor="@color/color_aaaaaa"
+                        android:text="  阅读"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:visibility="gone"
+        android:background="@color/color_f2f2f2"
+        android:layout_alignParentBottom="true"/>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:weightSum="2">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="2"-->
+                <!--android:orientation="vertical">-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textSize="@dimen/size_20"-->
+                    <!--android:maxLength="40"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:text="@{bean.title}"/>-->
+
+                <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="@dimen/size_20"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="@{bean.look_num}"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:textSize="@dimen/size_20"&ndash;&gt;-->
+                        <!--&lt;!&ndash;android:text="  阅读"/>&ndash;&gt;-->
+                <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+            <!--</LinearLayout>-->
+
+
+
+            <!--<ImageView-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:src="@drawable/ic_launcher"-->
+                <!--app:imgSrc="@{bean.master_img}"-->
+                <!--/>-->
+
+
+
+        <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/size_20"-->
+            <!--android:text="@{bean.look_num}"/>-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="@dimen/size_20"-->
+            <!--android:text="  阅读"/>-->
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</layout>

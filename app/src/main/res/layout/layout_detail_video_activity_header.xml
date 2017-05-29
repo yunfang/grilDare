@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="bean"
+            type="com.dora.feed.mvp.bean.CommentDetailBean.Data" />
+        <variable
+            name="click"
+            type="com.dora.feed.mvp.bean.CommentItmeHandler" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/padding_16"
+        android:layout_marginLeft="@dimen/padding_16"
+        android:layout_marginBottom="@dimen/padding_16"
+        >
+
+        <TextView
+            android:id="@+id/detail_read_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textSize="17sp"
+            android:layout_marginRight="@dimen/padding_16"
+            android:textColor="@color/text_title_gray"
+            android:text="@{bean.nick}" />
+
+        <TextView
+            android:id="@+id/detail_read_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_6"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/color_999999"
+            android:text="@{bean.floor_num}" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_16"
+                android:text="@string/xiangguantuijian"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+
+                android:layout_marginTop="@dimen/padding_4"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="56dp"
+                    android:layout_height="@dimen/padding_1"
+                    android:background="#ff0000" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_1"
+                    android:background="@color/color_f2f2f2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

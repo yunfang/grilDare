@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RecyclerItemViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alan Schulte"
+                android:textSize="@dimen/size_18"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30秒"
+                android:textSize="@dimen/size_14"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_18"
+                android:text="不用于号来的身份了深刻的积分楼上减肥了时间多付了款加速度来开发加速度来开发距离考试等级分类考试的加分流口水的积分老师的附件流口水的"/>
+
+            <LinearLayout
+                android:id="@+id/id_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/color_999999"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_launcher"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="游戏了空间法律上的积分楼上的收到了开发建设的路口"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/mSampleListItemImg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="132dp"-->
+        <!--android:background="@mipmap/ic_launcher"/>-->
+    <!--<TextView-->
+        <!--android:id="@+id/mSampleListItemLabel"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="10dp"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:textSize="16sp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/bu"-->
+        <!--android:layout_width="130dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:text="button"/>-->
+</RelativeLayout>

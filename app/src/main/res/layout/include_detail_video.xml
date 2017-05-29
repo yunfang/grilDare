@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="250dp">
+    <!--<FrameLayout-->
+        <!--android:id="@+id/ff_frame"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="250dp"-->
+        <!-->-->
+        <!--&lt;!&ndash;<io.vov.vitamio.widget.CenterLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="250dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:background="@android:color/black"&ndash;&gt;-->
+            <!--&lt;!&ndash;>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;<io.vov.vitamio.widget.VideoView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/detail_video_view"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+                <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--&lt;!&ndash;</io.vov.vitamio.widget.CenterLayout>&ndash;&gt;-->
+    <!--</FrameLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ProgressBar-->
+            <!--android:id="@+id/probar"-->
+            <!--style="?android:attr/progressBarStyleLarge"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="50dp" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/download_rate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:text="" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/load_rate"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:text="" />-->
+    <!--</LinearLayout>-->
+   <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#77000000"-->
+       <!--android:visibility="gone"-->
+        <!--android:layout_height="50dp">-->
+        <!--<TextView-->
+            <!--android:id="@+id/mediacontroller_time_current"-->
+            <!--style="@style/MediaController_Text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:text="33:33:33"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/mediacontroller_time_total"-->
+            <!--style="@style/MediaController_Text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:text="33:33:33"/>-->
+        <!--<SeekBar-->
+            <!--android:id="@+id/mediacontroller_seekbar"-->
+            <!--style="@style/MediaController_SeekBar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@id/mediacontroller_time_total"-->
+            <!--android:layout_toRightOf="@id/mediacontroller_time_current"-->
+            <!--android:focusable="true"-->
+            <!--android:max="1000"/>-->
+    <!--</RelativeLayout>-->
+</RelativeLayout>

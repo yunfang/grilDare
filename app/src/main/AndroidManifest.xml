@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dora.feed">
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+
+    <!-- SDK2.1新增获取用户位置信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 硬件加速对X5视频播放非常重要，建议开启 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name="com.famlink.frame.configure.GenericApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".view.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.WelcomeActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".view.DrawLayoutActivity" android:screenOrientation="portrait" android:launchMode="singleTop">
+            <!--新浪微博的回调页面设置-->
+            <!--<intent-filter>-->
+            <!--<action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />-->
+            <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+
+
+        <activity android:name=".view.RetroactionActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name="com.famlink.frame.view.activity.AboutActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".view.LoginActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+
+        <!--<activity android:name=".view.DetailsActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"
+            />-->
+
+        <activity android:name=".view.DetailsX5Activity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <activity android:name=".view.DetailsX5Activity1"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" />
+        <activity android:name=".view.ReadNewsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+
+        <activity android:name=".view.DetailVideoActivity"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+        <activity android:name=".view.DetailVideoActivity1"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop"/>
+
+
+        <activity android:name=".view.StarSettingActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".view.CommentedDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".view.StarDetailActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <activity android:name=".view.SearchActivity" android:screenOrientation="portrait" android:launchMode="singleTop"/>
+        <!--微信-->
+        <activity android:name=".wxapi.WXEntryActivity"
+            android:exported="true"/>
+
+        <!--微博分享sdk-->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+
+
+        <!--腾讯分享sdk-->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="behind"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105611968" />
+                <!-- 100380359 100381104 222222 -->
+            </intent-filter>
+        </activity>
+
+        <!--chanel_id，是一个渠道id-->
+        <meta-data android:name="chanel_id" android:value="${CHANEL_ID_VALUE}"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- startReceiver 用来设置开机启动 消息推送的接收service -->
+        <receiver android:name="com.dora.feed.utils.StartReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dora.feed.utils.NotificationDetailReceiver"
+            android:process=":push"
+            />
+
+        <service android:name="com.dora.feed.utils.MyPushIntentService" android:process=":push"/>
+
+        <!-- 使用完全自定义消息来开启应用的服务进程的示例服务配置 -->
+        <!-- 不是必需的服务，可以根据开发者的需求进行设置 -->
+        <service android:name="com.dora.feed.utils.NotificationService" />
+        <!--测试版-->
+        <!-- <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57a87a76e0f55a4fdc0033f0" >
+        </meta-data>
+-->
+        <!--<meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="5a1ef009a6e961b53ab9dd554b61d4eb" >
+        </meta-data>-->
+        <!--正式版-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57a82eaf67e58ea3b8001d90" >
+        </meta-data>
+
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="14e2bcf0689373af5851f5d23dde36b8" >
+        </meta-data>
+        <meta-data android:name="UMENG_CHANNEL"
+            android:value="Umeng" >
+        </meta-data>
+
+
+    </application>
+
+</manifest>

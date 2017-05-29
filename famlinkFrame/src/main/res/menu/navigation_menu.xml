@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.widget.MainActivity">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_group_1"
+            android:icon="@drawable/xml_click_home_sytle"
+            android:title="@string/navigation_1"/>
+        <item
+            android:id="@+id/navigation_group_2"
+            android:icon="@drawable/xml_click_favorites_sytle"
+            android:title="@string/navigation_2"  />
+        <item
+            android:id="@+id/navigation_group_3"
+            android:icon="@drawable/xml_click_comment_sytle"
+            android:title="@string/navigation_3" />
+        <item
+            android:id="@+id/navigation_group_4"
+            app:actionLayout="@layout/v7_navigation_menu_badge"
+            android:icon="@drawable/xml_click_mymessage_sytle"
+            android:title="@string/navigation_4" />
+        <item
+            android:id="@+id/navigation_group_5"
+            android:icon="@drawable/xml_click_recommend_sytle"
+            android:title="@string/navigation_5" />
+        <item
+            android:id="@+id/navigation_group_6"
+            android:icon="@drawable/xml_click_setting_sytle"
+            android:title="@string/navigation_6" />
+        <item
+            android:id="@+id/navigation_group_7"
+            android:icon="@drawable/xml_click_retroaction_sytle"
+            android:title="@string/setting_feedback" />
+    </group>
+</menu>

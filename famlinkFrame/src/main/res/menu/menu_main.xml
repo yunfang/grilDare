@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/xml_click_menu_search_selector"
+        app:showAsAction="ifRoom"
+        />
+</menu>

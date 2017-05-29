@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <com.famlink.frame.widget.NavigateBar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/navigateBar"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@color/navagation_bar_bg" />

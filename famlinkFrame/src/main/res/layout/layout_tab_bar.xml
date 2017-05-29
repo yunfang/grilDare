@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.famlink.frame.view.tab.tabbar.SellerBottomMenuView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--<View -->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/top_view_frag_line"-->
+        <!--/>-->
+
+    <com.famlink.frame.view.tab.tabbar.SellerNavigationBar
+        android:id="@+id/tb_navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentLeft="true"
+        android:alpha="1.0"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.famlink.frame.view.tab.tabbar.SellerTabRadioButton
+            android:id="@+id/button_one"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            app:img_checked="@mipmap/ic_launcher"
+            app:img_normal="@mipmap/ic_launcher"
+            app:text="@string/main_button_one"
+            app:text_color_checked="@color/tab_color_clicked"
+            app:text_color_normal="@color/tab_color_normal" >
+        </com.famlink.frame.view.tab.tabbar.SellerTabRadioButton>
+
+        <com.famlink.frame.view.tab.tabbar.SellerTabRadioButton
+            android:id="@+id/button_two"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            app:img_checked="@mipmap/ic_launcher"
+            app:img_normal="@mipmap/ic_launcher"
+            app:text="@string/main_button_two"
+            app:text_color_checked="@color/tab_color_clicked"
+            app:text_color_normal="@color/tab_color_normal" >
+        </com.famlink.frame.view.tab.tabbar.SellerTabRadioButton>
+        <com.famlink.frame.view.tab.tabbar.SellerTabRadioButton
+            android:id="@+id/button_three"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            app:img_checked="@mipmap/ic_launcher"
+            app:img_normal="@mipmap/ic_launcher"
+            app:text="@string/main_button_three"
+            app:text_color_checked="@color/tab_color_clicked"
+            app:text_color_normal="@color/tab_color_normal" >
+        </com.famlink.frame.view.tab.tabbar.SellerTabRadioButton>
+        <com.famlink.frame.view.tab.tabbar.SellerTabRadioButton
+            android:id="@+id/button_four"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            app:img_checked="@mipmap/ic_launcher"
+            app:img_normal="@mipmap/ic_launcher"
+            app:text="@string/main_button_four"
+            app:text_color_checked="@color/tab_color_clicked"
+            app:text_color_normal="@color/tab_color_normal" >
+        </com.famlink.frame.view.tab.tabbar.SellerTabRadioButton>
+        <com.famlink.frame.view.tab.tabbar.SellerTabRadioButton
+            android:id="@+id/button_five"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_weight="1"
+            app:img_checked="@mipmap/ic_launcher"
+            app:img_normal="@mipmap/ic_launcher"
+            app:text="@string/main_button_five"
+            app:text_color_checked="@color/tab_color_clicked"
+            app:text_color_normal="@color/tab_color_normal" >
+        </com.famlink.frame.view.tab.tabbar.SellerTabRadioButton>
+    </com.famlink.frame.view.tab.tabbar.SellerNavigationBar>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/relativeLayout1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:layout_marginBottom="5dp"-->
+         <!-->-->
+	<!--<ImageView -->
+	    <!--android:id="@+id/id_img_live_head"-->
+	    <!--android:layout_width="62dp"-->
+	    <!--android:layout_height="62dp"-->
+	    <!--android:src="@drawable/ic_camera"-->
+	    <!--/>-->
+       
+<!--         <com.farmlink.most.widget.circular.CircularImageView -->
+<!--         android:id="@+id/id_img_live_head" -->
+<!--         android:layout_width="62dp" -->
+<!--         android:layout_height="62dp" -->
+<!--         android:layout_centerInParent="true" -->
+<!--         android:scaleType="fitXY" -->
+<!--         android:src="@drawable/ic_camera" /> -->
+
+    <!--</RelativeLayout>-->
+
+</com.famlink.frame.view.tab.tabbar.SellerBottomMenuView>

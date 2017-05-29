@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">多拉阅读</string>
+    <string name="main_button_one">One</string>
+    <string name="main_button_two">Two</string>
+    <string name="main_button_three">Three</string>
+    <string name="main_button_four">Four</string>
+    <string name="main_button_five">Five</string>
+
+    <string name="navigation_1">首页</string>
+    <string name="navigation_2">我的收藏</string>
+    <string name="navigation_3">我的评论</string>
+    <string name="navigation_4">消息</string>
+    <string name="navigation_5">推荐给好友</string>
+    <string name="navigation_6">设置</string>
+
+    <string name="start_app">启动应用</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string name="generic_no_data_title">加载中</string>
+    <string name="generic_no_data_content">刷新</string>
+    <string name="generic_no_network_title">网络连接失败,请重试</string>
+    <string name="generic_no_network_content">刷新</string>
+
+
+    <string name="generic_no_network_error">Network failed, please check your network settings</string>
+
+    <string name="setting_feedback">意见反馈</string>
+    <string name="hint_feedback_input">请填写您的反馈建议</string>
+    <string name="navigation_fankui">反馈建议</string>
+    <string name="about_us">关于我们</string>
+    <string name="confirm">确定</string>
+    <string name="cancel_update">取消更新</string>
+    <string name="ok_update">确定更新</string>
+    <string name="version_update">版本更新</string>
+    <string name="toast_two_finish_project">再按一次退出程序</string>
+    <string name="send">发送</string>
+    <string name="hint_feed">说点什么吧</string>
+    <string name="feed_length_too_long">超过了最大长度</string>
+    <string name="feed_fail">反馈失败</string>
+    <string name="check_login">点击登录</string>
+    <string name="logout_tv">退出登录</string>
+    <string name="logout_content">你确定要退出登录吗?</string>
+
+    <string name="toast_net_work_error">网络不可用</string>
+    <string name="toast_load_more">查看更多</string>
+    <string name="toast_type_no_data">暂无可推荐的数据</string>
+    <string name="layout_no_data">暂无数据</string>
+    <string name="layout_loading_data">加载中</string>
+
+</resources>

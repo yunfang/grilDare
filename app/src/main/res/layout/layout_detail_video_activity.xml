@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/detail_video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detail_video_layout"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/detail_read_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:textSize="17sp"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_16"
+            android:layout_marginRight="@dimen/padding_10"
+            android:textColor="@color/text_title_gray"
+            />
+
+        <TextView
+            android:id="@+id/detail_read_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_6"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/color_999999"
+            android:text="2121" />
+        <LinearLayout
+            android:id="@+id/about_tuijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_16"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:text="@string/xiangguantuijian"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginLeft="@dimen/padding_10"
+                android:layout_marginTop="@dimen/padding_4"
+                android:orientation="horizontal">
+                <View
+                    android:layout_width="56dp"
+                    android:layout_height="@dimen/padding_1"
+                    android:background="#ff0000"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_1"
+                    android:background="@color/color_f2f2f2"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.dora.feed.widget.CusRecyclerView
+                    android:id="@+id/comment_pullrectuijian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/about_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_16"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:text="@string/quanbupinglun"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_4"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="56dp"
+                android:layout_height="@dimen/padding_1"
+                android:background="#ff0000"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_1"
+                android:background="@color/color_f2f2f2"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.dora.feed.widget.CusRecyclerView
+                    android:id="@+id/detail_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:scrollbarSize="@dimen/padding_8"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbarThumbVertical="@color/color_fb82a9"
+                    android:scrollbars="vertical" />
+                <include
+                    layout="@layout/widget_pull_to_refresh_footer_web_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="50dp" />
+            </LinearLayout>
+            <include layout="@layout/generic_no_datanetwork_video_include"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                />
+        </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/detail_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_16"
+        android:background="@drawable/back" />
+
+    <include layout="@layout/include_detail_footer_layout" />
+
+    <FrameLayout
+        android:id="@+id/full_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

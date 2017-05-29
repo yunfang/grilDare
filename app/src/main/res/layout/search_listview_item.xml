@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:gravity="center"
+    android:background="@color/white"
+   >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="37dp"
+    android:gravity="center_vertical"
+    android:background="@color/color_f5f5f5"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/search_listview_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_13"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/color_333333"
+        android:text="收到了飞机上来的快放假"/>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.5dp"-->
+        <!--android:background="@color/top_view_frag_line"-->
+        <!--/>-->
+</LinearLayout>
+
+
+
+</RelativeLayout>

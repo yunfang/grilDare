@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/white"
+            app:titleTextColor="@color/color_fb82a9"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <!--<EditText-->
+                <!--android:id="@+id/id_edit"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+            <EditText
+                android:id="@+id/id_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sousuo_bg"
+                android:textSize="@dimen/size_14"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:imeOptions="actionSearch"
+                android:drawableRight="@drawable/sousuo_delete"
+                android:singleLine="true"
+                />
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/navigation_fankui"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:textSize="@dimen/size_18"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/color_fb82a9"-->
+                <!--android:id="@+id/toolbar_title" />-->
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+    <include layout="@layout/content_search" />
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical" >-->
+
+    <!--<include-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="55dip"-->
+        <!--layout="@layout/include_navigation_bar" />-->
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="55dp" >-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/feed_back_comment_et"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/hint_feedback_input"-->
+            <!--android:background="@android:color/white"-->
+            <!--android:lines="5" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/line"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_below="@+id/feed_back_comment_et"-->
+            <!--android:background="@color/text_gray" />-->
+
+        <!--<Button-->
+            <!--android:id="@+id/feed_back_commit_btn"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/btn_selector"-->
+            <!--android:text="@string/confirm"-->
+            <!--android:textColor="@color/text_white"-->
+            <!--android:textSize="@dimen/size_14" />-->
+    <!--</RelativeLayout>-->
+
+<!--</RelativeLayout>-->

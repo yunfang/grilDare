@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyRadioButton">
+        <attr name="img_normal" format="reference"></attr>
+        <attr name="img_checked" format="reference"></attr>
+        <attr name="bg_img_normal" format="reference"></attr>
+        <attr name="bg_img_checked" format="reference"></attr>
+        <attr name="text" format="reference"></attr>
+        <attr name="text_color_normal" format="reference"></attr>
+        <attr name="text_color_checked" format="reference"></attr>
+        <attr name="bg_color_normal" format="reference"></attr>
+        <attr name="bg_color_checked" format="reference"></attr>
+    </declare-styleable>
+
+    <!-- 自定义风格 -->
+    <declare-styleable name="AppTheme">
+
+        <!-- 对话框 Style -->
+        <attr name="dialogStyle" format="reference" />
+
+        <!-- ActionBar 各项属性 -->
+        <!-- ActionBar 标题字体大小 -->
+        <attr name="actionBarTitleTextSize" format="reference|dimension" />
+        <!-- ActionBar 标题字体颜色 -->
+        <attr name="actionBarTitleTextColor" format="reference|color" />
+        <!-- ActionBar 背景 -->
+        <attr name="actionBarBackground" format="reference" />
+
+        <!-- 弹出菜单背景 -->
+        <attr name="popupMenuBackground" format="reference" />
+    </declare-styleable>
+
+    <!--圆形图片-->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+    <!--  比例相对布局的属性 -->
+    <declare-styleable name="RelativeLayoutWithRelativeScreenRatio">
+        <attr name="orientation">
+            <enum name="fixWidth" value="0" />
+            <enum name="fixHeight" value="1" />
+            <enum name="auto" value="2" />
+            <enum name="match" value="3" />
+        </attr>
+        <attr name="ratio" format="float"/>
+        <attr name="relativeWidth" format="float"/>
+        <attr name="relativeHeight" format="float"/>
+    </declare-styleable>
+
+    <!--  固定宽高比的属性 -->
+    <declare-styleable name="FixedAspectRatio">
+        <attr name="fixOrientation">
+            <enum name="fixWidth" value="0"/>
+            <enum name="fixHeight" value="1"/>
+        </attr>
+        <attr name="aspectRatio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="progressDrawable" format="reference"/>
+    </declare-styleable>
+
+
+    <!-- 圆角ImageView 边框宽度、边框颜色 -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ConvenientBanner">
+        <attr name="canLoop" format="boolean" />
+    </declare-styleable>
+</resources>

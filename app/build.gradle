@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+// This does not break the build when Android Studio is missing the JRebel for Android plugin.
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+
+    defaultConfig {
+        applicationId "com.dora.feed"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 6
+        versionName "1.2.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    //渠道号
+    productFlavors {
+        "official"{manifestPlaceholders = [CHANEL_ID_VALUE: "0"]}     //官方
+        "yingyongbao"{manifestPlaceholders = [CHANEL_ID_VALUE: "1"]}     //应用宝
+        "kuchuan"{manifestPlaceholders = [CHANEL_ID_VALUE: "2"]}     //酷传
+        "baidu"{manifestPlaceholders = [CHANEL_ID_VALUE: "3"]}   //百度
+        "360"{manifestPlaceholders = [CHANEL_ID_VALUE: "4"]}     //360
+        "xiaomi"{manifestPlaceholders = [CHANEL_ID_VALUE: "5"]}   //小米
+        "huawei"{manifestPlaceholders = [CHANEL_ID_VALUE: "6"]}   //华为
+        "vivo"{manifestPlaceholders = [CHANEL_ID_VALUE: "7"]}     //vivo
+        "oppo"{manifestPlaceholders = [CHANEL_ID_VALUE: "8"]}     //oppo
+        "meizu"{manifestPlaceholders = [CHANEL_ID_VALUE: "9"]}     //meizu
+        "wangmeng"{manifestPlaceholders = [CHANEL_ID_VALUE: "10"]}     //网盟
+        "kuan"{manifestPlaceholders = [CHANEL_ID_VALUE: "11"]}     //酷安
+    }
+//    productFlavors.all {
+//        flavor -> flavor.manifestPlaceholders = [CHANEL_ID_VALUE: name]
+//    }
+    lintOptions {
+        abortOnError false
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':famlinkFrame')
+    compile project(':PushSDK')
+    compile 'tv.danmaku.ijk.media:ijkplayer-java:0.5.1'
+    //视频播放器
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv7a:0.5.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-exo:0.5.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-x86:0.5.1'
+    compile 'tv.danmaku.ijk.media:ijkplayer-armv5:0.5.1'
+    compile 'com.balysv:material-ripple:1.0.2'
+    //水波纹扩散的效果
+}
+

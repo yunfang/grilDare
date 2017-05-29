@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<data>
+    <variable
+        name="str"
+        type="String" />
+
+</data>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.famlink.frame.widget.pullrecycleview.PullRecycler
+        android:id="@+id/pullRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarSize="@dimen/padding_8"
+        android:scrollbarStyle="outsideOverlay"
+
+        />
+
+    <include layout="@layout/generic_no_datanetwork_include" />
+    <include layout="@layout/layout_fragment_index_top_tip" />
+</RelativeLayout>
+</layout>

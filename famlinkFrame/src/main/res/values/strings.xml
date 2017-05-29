@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">多拉阅读</string>
+    <string name="main_button_one">One</string>
+    <string name="main_button_two">Two</string>
+    <string name="main_button_three">Three</string>
+    <string name="main_button_four">Four</string>
+    <string name="main_button_five">Five</string>
+
+    <string name="navigation_1">首页</string>
+    <string name="navigation_2">我的收藏</string>
+    <string name="navigation_3">我的评论</string>
+    <string name="navigation_4">消息</string>
+    <string name="navigation_5">推荐给好友</string>
+    <string name="navigation_6">设置</string>
+
+
+    <string name="start_app">启动应用</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+    <string name="generic_no_data_title">加载中</string>
+    <string name="generic_no_data_content">刷新</string>
+    <string name="generic_no_network_title">网络连接失败,请重试</string>
+    <string name="generic_no_network_content">No NetWork</string>
+
+
+    <string name="generic_no_network_error">Network failed, please check your network settings</string>
+
+    <string name="setting_feedback">意见反馈</string>
+    <string name="hint_feedback_input">请填写您的反馈建议</string>
+    <string name="navigation_fankui">反馈建议</string>
+    <string name="about_us">关于我们</string>
+    <string name="confirm">确定</string>
+    <string name="cancel_update">取消更新</string>
+    <string name="ok_update">确定更新</string>
+    <string name="version_update">版本更新</string>
+    <string name="toast_two_finish_project">再按一次退出程序</string>
+    <string name="send">发送</string>
+    <string name="hint_feed">说点什么吧</string>
+    <string name="feed_length_too_long">超过了最大长度</string>
+    <string name="feed_fail">反馈失败</string>
+    <string name="check_login">点击登录</string>
+    <string name="logout_tv">退出登录</string>
+    <string name="logout_content">你确定要退出登录吗?</string>
+
+
+    <string name="dialog_change_network_title">【流量使用提示】</string>
+    <string name="dialog_change_network_content">当前网络无Wi-Fi,继续播放可能会被运营商收取流量费用</string>
+    <string name="dialog_change_network_yes">停止播放</string>
+    <string name="dialog_change_network_no">继续播放</string>
+
+    <string name="toast_net_work_error">网络不可用</string>
+    <string name="toast_load_more">查看更多</string>
+  <!--  <string name="toast_type_no_data">暂无可推荐的数据</string>-->
+    <string name="layout_no_data">暂无数据</string>
+    <string name="layout_loading_data">加载中</string>
+    <string name="share_tips_tips">多拉阅读-全球首款女性智能兴趣阅读App</string>
+    <string name="share_tips_1">全球首款女性智能兴趣阅读App</string>
+    <string name="share_from">来自多拉阅读的分享</string>
+
+
+    <string name="about_content1">多拉阅读（Dorafeed ）是世界上第一款女性智能兴趣阅读App。</string>
+    <string name="about_content2">目前已推出了英文版、中文版、葡语版、法语版、西班牙语版，并迅速在世界各国占领了“一切拥有天赋的、美丽的女人们”，成为她们每天必读的内容阅读工具。</string>
+    <string name="about_content3">多拉阅读器名字取自古希腊神话中的人物 Pandora（潘多拉）。</string>
+    <string name="about_content4">潘多拉（Pandora，希腊语：Πανδώρα，也译作潘多拉），是希腊神话中赫淮斯托斯用粘土做成的第一个女人，作为对普罗米修斯盗火的惩罚，送给人类的第一个女人。
+        古希腊语中，（Pandora 潘多拉）潘是所有的意思，多拉则是礼物。“潘多拉”即为“拥有一切天赋的女人”。
+        Dora团队，把多拉阅读当做礼物，献给世界上所有可爱的女性。 致力于帮助用户发现美丽与欢乐。</string>
+
+
+
+
+
+</resources>

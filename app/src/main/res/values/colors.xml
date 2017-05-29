@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="living_item_bg">#eeeeee</color>
+    <color name="top_view_frag_line">#dddddd</color>
+    <color name="color_fafafa">#FAFAFA</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_aaaaaa">#AAAAAA</color>
+    <color name="color_efeff4">#efeff4</color>
+
+    <color name="color_tips">#e0d6e9f7</color>
+    <color name="color_tips_title">#2d90d7</color>
+
+
+
+
+
+</resources>

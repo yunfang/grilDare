@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+
+    <!--<com.farmlink.most.widget.NavigateBar-->
+    <!--android:id="@+id/navigateBar"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="55dip"-->
+    <!--android:background="@color/navagation_bar_bg" />-->
+
+    <LinearLayout
+        android:id="@+id/layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal" >
+
+        <fragment
+            android:id="@+id/fragment_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            class="com.famlink.frame.view.tab.tabfragment.FragmentOne" />
+
+        <fragment
+            android:id="@+id/fragment_two"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            class="com.famlink.frame.view.tab.tabfragment.FragmentTwo" />
+
+        <fragment
+            android:id="@+id/fragment_three"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            class="com.famlink.frame.view.tab.tabfragment.FragmentThree" />
+
+        <fragment
+            android:id="@+id/fragment_four"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            class="com.famlink.frame.view.tab.tabfragment.FragmentFour" />
+
+        <fragment
+            android:id="@+id/fragment_five"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            class="com.famlink.frame.view.tab.tabfragment.FragmentFive" />
+
+    </LinearLayout>
+
+    <!-- 底部栏 -->
+    <!-- 	<Button  -->
+    <!-- 	    android:id="@+id/activity_seller_start" -->
+    <!-- 	    android:layout_width="wrap_content" -->
+    <!-- 	    android:layout_height="wrap_content" -->
+    <!-- 	    android:layout_alignParentBottom="true" -->
+    <!-- 	    android:layout_centerHorizontal="true" -->
+    <!-- 	    android:background="@drawable/ic_launcher" -->
+    <!-- 	    android:text="开始直播" -->
+    <!-- 	    /> -->
+
+    <include
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        layout="@layout/layout_tab_bar" />
+
+</RelativeLayout>

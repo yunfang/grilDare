@@ -1,0 +1,121 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_999999</item>
+        <item name="colorPrimaryDark">@color/color_999999</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/AppTheme.Widget.TextView</item>
+        <item name="android:actionBarStyle">@style/AppTheme.Widget.TextView.Style</item>
+
+
+        <!-- navigationView的选中颜色 begin-->
+        <item name="colorControlHighlight">@color/color_f2f2f2</item> 
+        <item name="selectableItemBackground">@drawable/selectable_item_background</item>
+        <item name="android:selectableItemBackground">@drawable/selectable_item_background</item>
+        <!-- navigationView的选中颜色 end-->
+    </style>
+    <color name="primary">#ff0000</color>
+    <style name="AppTheme.Widget.TextView" parent="android:Widget.Holo.Light.TextView">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/ssss.ttf</item>
+    </style>
+
+
+    <style name="AppTheme.Widget.TextView.Style">
+        <item name="fontPath">fonts/ssss.ttf</item>
+    </style>
+
+    <style name="AppTheme.Widget.TextViewAppearanceStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.FontPath</item>
+    </style>
+
+
+
+
+
+
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/ssss.ttf</item>
+    </style>
+
+
+
+
+
+
+
+    <!--Toolbar标题样式-->
+    <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--详情页ToolBar标题文字的大小-->
+    <style name="CollapsingToolbar">
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <!--返回键颜色-->
+    <style name="toolbar_white_theme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+    <style name="toolbar_pink_theme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">#fb82a9</item>
+    </style>
+
+    <style name="CustomDialogStyle" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item><!--除去title-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@null</item><!--除去背景色-->
+    </style>
+
+    <!-- 星座爱情 -->
+    <style name="RadingLoveStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/rating_bar_love_selector</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">8dp</item>
+        <item name="android:maxHeight">13dp</item>
+    </style>
+    <!-- 星座健康 -->
+    <style name="RadingHealthyStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/rating_bar_heathly_selector</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">8dp</item>
+        <item name="android:maxHeight">13dp</item>
+    </style>
+    <!-- 星座工作 -->
+    <style name="RadingWorkStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/rating_bar_work_selector</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">8dp</item>
+        <item name="android:maxHeight">13dp</item>
+    </style>
+    <!-- 星座金钱 -->
+    <style name="RadingMoneyStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/rating_bar_money_selector</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:minHeight">8dp</item>
+        <item name="android:maxHeight">13dp</item>
+    </style>
+
+</resources>

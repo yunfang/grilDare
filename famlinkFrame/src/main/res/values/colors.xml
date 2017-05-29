@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 顶部bar背景色 -->
+    <color name="navagation_bar_bg">#2C333D</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="tab_color_clicked">#438ee1</color>
+    <color name="tab_color_normal">#666666</color>
+    <color name="transparent">#00000000</color>
+
+
+
+    <color name="primary">#F44336</color>
+    <color name="primary_dark">#D32F2F</color>
+    <color name="primary_light">#FFCDD2</color>
+    <color name="accent">#CDDC39</color>
+    <color name="color_212121">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_999999">#999999</color>
+    <color name="text_white">@android:color/white</color>
+    <color name="all_rel_back_or">#FFDDDD</color>
+
+    <color name="bottom_bar_bg">#f5f5f5</color>
+    <color name="atation_make_point">#438ee1</color>
+    <color name="text_title_gray">#333333</color>
+    <color name="line">#eeeeee</color>
+
+    <color name="line_cccccc">#cccccc</color>
+
+    <color name="app_transparent">#00000000</color>
+    <color name="grey">#808080</color>
+    <color name="black">#000000</color>
+    <color name="tab_gray">#ff999999</color>
+    <color name="tab_green">#ff45c01a</color>
+
+    <color name="mengban">#37080808</color>
+
+    <color name="color_aaaaaa">#aaaaaa</color>
+
+
+    <color name="color_fb82a9">#333333</color>
+    <!--<color name="color_fb82a9">#fb82a9</color>-->
+    <color name="color_navigation_f2f2f2">#80F2F2F2</color>
+    <color name="color_f2f2f2">#F2F2F2</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_b0b0b0">#b0b0b0</color>
+
+
+    <color name="color_fb3b76">#fb3b76</color>
+</resources>

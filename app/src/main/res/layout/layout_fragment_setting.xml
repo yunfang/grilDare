@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="str2"
+            type="String" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_f2f2f2"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<TextView-->
+            <!--android:id="@+id/line"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:layout_marginTop="30dp"-->
+            <!--android:background="@color/top_view_frag_line" />-->
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                bind:mrl_rippleAlpha="0.1"
+                bind:mrl_rippleColor="@color/color_666666"
+                bind:mrl_rippleHover="true"
+                bind:mrl_rippleOverlay="true">
+            <RelativeLayout
+                android:id="@+id/setting_sagittarius_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/xml_click_rela"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="@dimen/size_14"
+                    android:textColor="@color/color_333333"
+                    android:textStyle="bold"
+                    android:text="@string/sagittarius" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/more"/>
+            </RelativeLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f2f2f2" />
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                bind:mrl_rippleAlpha="0.1"
+                bind:mrl_rippleColor="@color/color_666666"
+                bind:mrl_rippleHover="true"
+                bind:mrl_rippleOverlay="true">
+
+            <RelativeLayout
+                android:id="@+id/setting_update_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/xml_click_rela"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/size_14"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/check_update" />
+
+
+            </RelativeLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0.5dp"-->
+            <!--android:background="@color/top_view_frag_line" />-->
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                bind:mrl_rippleAlpha="0.1"
+                bind:mrl_rippleColor="@color/color_666666"
+                bind:mrl_rippleHover="true"
+                bind:mrl_rippleOverlay="true">
+            <RelativeLayout
+                android:id="@+id/setting_feed_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/xml_click_rela"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/size_14"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/setting_feedback" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/more"/>
+
+
+            </RelativeLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f2f2f2" />
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                bind:mrl_rippleAlpha="0.1"
+                bind:mrl_rippleColor="@color/color_666666"
+                bind:mrl_rippleHover="true"
+                bind:mrl_rippleOverlay="true">
+            <RelativeLayout
+                android:id="@+id/setting_about_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/xml_click_rela"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/size_14"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/about_us" />
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/more"/>
+            </RelativeLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                bind:mrl_rippleAlpha="0.1"
+                bind:mrl_rippleColor="@color/color_666666"
+                bind:mrl_rippleHover="true"
+                bind:mrl_rippleOverlay="true">
+            <RelativeLayout
+                android:id="@+id/setting_evaluate_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/xml_click_rela"
+                android:layout_marginTop="8dp"
+                >
+                <TextView
+                    android:id="@+id/setting_setting_evaluate_rl_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/size_14"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/evaluate" />
+                </RelativeLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_f2f2f2" />
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                bind:mrl_rippleAlpha="0.1"
+                bind:mrl_rippleColor="@color/color_666666"
+                bind:mrl_rippleHover="true"
+                bind:mrl_rippleOverlay="true">
+            <RelativeLayout
+                android:id="@+id/setting_logout_rl"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/xml_click_rela"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/size_14"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/logout_tv" />
+            </RelativeLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <!--<com.balysv.materialripple.MaterialRippleLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--bind:mrl_rippleAlpha="0.1"-->
+                <!--bind:mrl_rippleColor="@color/color_666666"-->
+                <!--bind:mrl_rippleHover="true"-->
+                <!--bind:mrl_rippleOverlay="true">-->
+                <RelativeLayout
+                    android:id="@+id/switch_push"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/xml_click_rela"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/color_333333"
+                        android:textSize="@dimen/size_14"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="12dp"
+                        android:text="@string/switch_push" />
+
+                    <ImageView
+                        android:id="@+id/btnEnable"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        />
+
+                </RelativeLayout>
+            <!--</com.balysv.materialripple.MaterialRippleLayout>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0.5dp"-->
+                <!--android:background="@color/top_view_frag_line" />-->
+
+
+            <!--<Button-->
+                <!--android:id="@+id/logout_bu"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/logout_str"-->
+                <!--android:layout_marginTop="50dp"/>-->
+            <Button
+                android:id="@+id/pingl_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="评论详情"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

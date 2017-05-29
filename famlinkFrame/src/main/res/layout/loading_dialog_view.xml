@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="200dp"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:background="#705F6164"
+    android:gravity="center">
+<!--     android:background="xml_white_corners_bg" -->
+
+    <ImageView
+        android:id="@+id/id_loading_img"
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/loading"
+        />
+    <!--android:background="@anim/tans_progress_adnim"-->
+<!--     android:src="@drawable/gif_login_loading" -->
+
+    <TextView
+        android:id="@+id/id_content_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:text=""
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_data"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:visibility="gone"
+    >
+    <include layout="@layout/generic_no_network_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/no_data_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/loading" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/generic_no_data_title"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:id="@+id/textContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:text="@string/generic_no_data_content"
+            android:textColor="@color/color_999999"
+            android:textSize="@dimen/size_12" />
+
+        <TextView
+            android:id="@+id/no_data_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/generic_no_data_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/gereric_no_data_bg"
+            android:textColor="@color/color_999999"
+            android:visibility="invisible"
+            android:textSize="@dimen/size_12" />
+    </LinearLayout>
+</LinearLayout>

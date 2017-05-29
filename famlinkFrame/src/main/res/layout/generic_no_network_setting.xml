@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider"
+    android:padding="@dimen/size_6"
+    >
+    <ImageView
+        android:id="@+id/generic_no_network_icon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_rss_feed_black_48dp"
+        />
+    <TextView
+        android:layout_toRightOf="@+id/generic_no_network_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/size_14"
+        android:text="@string/generic_no_network_error"
+        />
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/ic_keyboard_arrow_right_black_48dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

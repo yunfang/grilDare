@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--我的收藏-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@drawable/my_favorites_down" android:state_pressed="true"/>-->
+
+    <!--<item android:drawable="@drawable/my_favorites_up"/>-->
+    <item android:state_checked="true" android:drawable="@drawable/my_favorites_icon_down"></item>
+    <item android:state_checked="false" android:drawable="@drawable/my_favorites_icon_up"></item>
+</selector>

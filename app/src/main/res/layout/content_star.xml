@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/star_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/size_24"
+        android:paddingTop="10dp"
+        android:text="2015-12-14 14:12:32" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/circle_view_bg" />
+
+        <com.dora.feed.widget.CircleProgressView
+            android:id="@+id/circle_id"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/star_star_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/star_mo_xie" />
+
+            <TextView
+                android:id="@+id/star_star_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/star_star_icon"
+                android:layout_centerHorizontal="true"
+                android:text="50"
+                android:textColor="@color/color_333333"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/star_star_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/star_star_number"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/size_18" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/star_zunheyunshi"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/size_30"
+        android:textColor="@color/color_999999"
+        />
+    <TextView
+        android:id="@+id/star_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:paddingBottom="@dimen/padding_24"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/size_12"
+        android:textSize="@dimen/size_15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        >
+
+        <TextView
+            android:id="@+id/love_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/star_love_num"
+            android:textColor="@color/color_999999" />
+
+        <RatingBar
+            android:id="@+id/love_id"
+            style="@style/RadingLoveStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@+id/love_num"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="3.0" />
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/star_love_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:paddingBottom="@dimen/padding_24"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/size_12"
+        android:textSize="@dimen/size_15" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        >
+
+        <TextView
+            android:id="@+id/work_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/star_work_num"
+            android:textColor="@color/color_999999" />
+
+        <RatingBar
+            android:id="@+id/work_id"
+            style="@style/RadingWorkStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@+id/work_num"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="2.0" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/star_money_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:paddingBottom="@dimen/padding_24"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/size_12"
+        android:textSize="@dimen/size_15" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_10"
+        >
+
+        <TextView
+            android:id="@+id/money_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/star_money_nun"
+            android:textColor="@color/color_999999" />
+
+        <RatingBar
+            android:id="@+id/money_id"
+            style="@style/RadingMoneyStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_toRightOf="@+id/money_num"
+            android:numStars="5"
+            android:rating="4"
+            android:stepSize="2.0" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/star_work_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:paddingBottom="@dimen/padding_24"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/size_12"
+        android:textSize="@dimen/size_15" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:text="@string/star_meiritixing"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:textColor="@color/color_999999"
+        />
+    <TextView
+        android:id="@+id/star_day_notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="2dp"
+        android:paddingBottom="@dimen/padding_24"
+        android:paddingLeft="@dimen/padding_10"
+        android:paddingRight="@dimen/padding_10"
+        android:paddingTop="@dimen/size_12"
+        android:textSize="@dimen/size_15" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_f2f2f2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_18">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/lucky_textt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/star_lucky_num"
+                    android:textColor="@color/color_999999" />
+
+                <TextView
+                    android:id="@+id/lucky_num"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/lucky_textt"
+                    android:gravity="center_horizontal"
+                    android:text="9" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10">
+
+                <TextView
+                    android:id="@+id/lucky_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/star_luvky_color"
+                    android:textColor="@color/color_999999" />
+
+                <TextView
+                    android:id="@+id/lucky_color"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/lucky_text"
+                    android:gravity="center_horizontal"
+                    android:text="黄" />
+
+        </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_10"
+                android:layout_marginBottom="@dimen/padding_20"
+                >
+
+                <TextView
+                    android:id="@+id/person_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/star_perpon_num"
+                    android:textColor="@color/color_999999" />
+
+                <TextView
+                    android:id="@+id/person_num"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/person_text"
+                    android:gravity="center_horizontal"
+                    android:text="处女座" />
+            </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
