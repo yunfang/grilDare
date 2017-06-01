@@ -7,16 +7,16 @@ package com.famlink.frame.util;
 public class Content {
     /************************************************以下是微信的参数*****************************************************************************/
 
-    public static final String APP_ID = "wx17f019655f95e266";//微信分享的app_id
+    public static final String APP_ID = "xxxxxxx";//微信分享的app_id
 
-    public static final String APP_SECRET = "68086003f0df91cf359e2a948b4cf57c";//微信的APP_SECRET
+    public static final String APP_SECRET = "xxxxxxxxxxxxxxxxx";//微信的APP_SECRET
 
     public static final String WEIXIN_SCOPE = "snsapi_userinfo";// 用于请求用户信息的作用域
     public static final String WEIXIN_STATE = "login_state"; // 自定义
 
 
     /*********************************************腾讯的appid******************************************************************************************/
-    public static final String Tencent_APP_ID = "1105611968";//腾讯app_id  1105545018
+    public static final String Tencent_APP_ID = "xxxxxxx";//腾讯app_id  1105545018
 
 /****************************************以下是新浪微博的参数*********************************************************************/
 
@@ -24,7 +24,7 @@ public class Content {
     /** 当前 DEMO 应用的 APP_KEY，第三方应用应该使用自己的 APP_KEY 替换该 APP_KEY */
 //    public static final String SINA_APP_KEY = "1552473704"; // 微博sina_app_key
     //正式版Key
-    public static final String SINA_APP_KEY = "2862909327"; // 微博sina_app_key
+    public static final String SINA_APP_KEY = "xxxxxxx"; // 微博sina_app_key
 
     /**
      * 当前 DEMO 应用的回调页，第三方应用可以使用自己的回调页。
